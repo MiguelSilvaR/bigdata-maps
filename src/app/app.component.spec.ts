@@ -23,10 +23,10 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('bigda-maps');
   }));
-  xit(' -- should render title in a h1 tag', async(() => {
+  it(' -- should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to bigdata-maps!');
+    expect(compiled.querySelector('h1').textContent).toContain('We');
   }));
 });
